@@ -1,20 +1,22 @@
 function initContactForm() {
-  const contactForm = document.querySelector(".contact-form form");
+  const contactForms = document.querySelectorAll(
+    ".contact-form form, .banner-form form"
+  );
 
-  if (!contactForm) return;
+  contactForms.forEach((contactForm) => {
+    contactForm.addEventListener("submit", (event) => {
+      event.preventDefault();
 
-  contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
+      const name = contactForm.elements["name"].value.trim();
+      const email = contactForm.elements["email"].value.trim();
+      const message = contactForm.elements["message"].value.trim();
 
-    const name = contactForm.elements["name"].value.trim();
-    const email = contactForm.elements["email"].value.trim();
-    const message = contactForm.elements["message"].value.trim();
+      const subject = `Contato via site — ${name}`;
+      const body = `${message}\n\n${name}\n${email}`;
 
-    const subject = `Contato via site — ${name}`;
-    const body = `${message}\n\n${name}\n${email}`;
-
-    window.location.href = `mailto:contato@orflie.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
+      window.location.href = `mailto:contato@orflie.com?subject=${encodeURIComponent(
+        subject
+      )}&body=${encodeURIComponent(body)}`;
+    });
   });
 }

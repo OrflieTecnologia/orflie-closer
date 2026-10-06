@@ -36,7 +36,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <title>Orflie Closer</title>
+    <title>Orflie Group</title>
   </head>
   <body>
     <header>
@@ -93,9 +93,7 @@
       <section class="banner" id="banner">
         <div class="banner-content">
           <div class="banner-main">
-            <h1 class="showcase-title">
-              Vire em uma máquina de vendas.
-            </h1>
+            <h1 class="showcase-title">Vire em uma máquina de vendas.</h1>
             <p>
               Nós estruturamos e operamos o time comercial que sua empresa
               precisa, integrado ao seu funil e orientado por processos, gestão
@@ -109,71 +107,55 @@
               <a class="btn-cta" href="#Saibamais">Saiba mais</a>
             </div>
           </div>
-          <div class="banner-features">
-            <h2>Conheça nossas outras plataformas</h2>
-            <ul>
-              <li>
-                <a
-                  href="https://orflie-group.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="assets/images/Orflie - Group.svg"
-                    alt="Orflie Group"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://orflie.com.br/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="assets/images/Orflie - Sales outsourcing.svg"
-                    alt="Orflie Outsourcing"
-                /></a>
-              </li>
-
-              <li>
-                <a
-                  href="https://orflia.ai/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="orflia"
-                  ><img src="assets/images/Orflie - Orflia.svg" alt="Orflia"
-                /></a>
-              </li>
-
-              <li>
-                <a
-                  href="https://agc.orflie.group/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img src="assets/images/Orflie - AGC.svg" alt="Orflie AGC"
-                /></a>
-              </li>
-
-              <li>
-                <a
-                  href="https://audit.orflie.group/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="assets/images/Orflie - Audit.svg"
-                    alt="Orflie Audit"
-                /></a>
-              </li>
-
-              <li>
-                <a
-                  href="https://www.orflie.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  ><img
-                    src="assets/images/Orflie - Atende.svg"
-                    alt="Orflie Atende"
-                /></a>
-              </li>
-            </ul>
+          <div class="banner-form">
+            <h2>
+              Fale com a gente <span aria-hidden="true">→</span>
+            </h2>
+            <form>
+              <div class="form-group">
+                <label class="sr-only" for="banner-name">Nome</label>
+                <input
+                  type="text"
+                  id="banner-name"
+                  name="name"
+                  placeholder="Nome"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="banner-email">Email</label>
+                <input
+                  type="email"
+                  id="banner-email"
+                  name="email"
+                  placeholder="Email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+               <div class="form-group">
+                <label class="sr-only" for="banner-whatsapp">Whatsapp</label>
+                <input
+                  type="tel"
+                  id="banner-whatsapp"
+                  name="whatsapp"
+                  placeholder="Whatsapp"
+                  autocomplete="tel"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="banner-message">Mensagem</label>
+                <input
+                  id="banner-message"
+                  name="message"
+                  placeholder="Mensagem"
+                  required
+                ></input>
+              </div>
+              <button type="submit">Enviar mensagem</button>
+            </form>
           </div>
         </div>
       </section>
@@ -538,6 +520,17 @@
                 />
               </div>
               <div class="form-group">
+                <label class="sr-only" for="contact-whatsapp">Whatsapp</label>
+                <input
+                  type="tel"
+                  id="contact-whatsapp"
+                  name="whatsapp"
+                  placeholder="Whatsapp"
+                  autocomplete="tel"
+                  required
+                />
+              </div>
+              <div class="form-group">
                 <label class="sr-only" for="contact-message">Mensagem</label>
                 <textarea
                   id="contact-message"
@@ -552,6 +545,107 @@
               </button>
             </form>
           </div>
+        </div>
+      </section>
+
+      <!--Plataformas-->
+      <section class="platforms" id="platforms">
+        <div class="platforms-content">
+          <div class="platforms-text">
+            <span class="eyebrow">Ecossistema Orflie</span>
+            <h2>Conheça nossas outras plataformas</h2>
+          </div>
+          <ul class="platforms-list">
+            <li>
+              <a
+                href="https://orflie-group.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="logo-dark"
+                  src="assets/images/Orflie - Group-dark.svg"
+                  alt="Orflie Group" /><img
+                  class="logo-light"
+                  src="assets/images/Orflie - Group.svg"
+                  alt="Orflie Group"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://orflie.com.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="logo-dark"
+                  src="assets/images/Orflie - Sales outsourcing-dark.svg"
+                  alt="Orflie Outsourcing" /><img
+                  class="logo-light"
+                  src="assets/images/Orflie - Sales outsourcing.svg"
+                  alt="Orflie Outsourcing"
+              /></a>
+            </li>
+
+            <li>
+              <a
+                href="https://orflia.ai/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="orflia"
+                ><img
+                  class="logo-dark"
+                  src="assets/images/Orflie - Orflia-dark.svg"
+                  alt="Orflia" /><img
+                  class="logo-light"
+                  src="assets/images/Orflie - Orflia.svg"
+                  alt="Orflia"
+              /></a>
+            </li>
+
+            <li>
+              <a
+                href="https://agc.orflie.group/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="logo-dark"
+                  src="assets/images/Orflie - AGC-dark.svg"
+                  alt="Orflie AGC" /><img
+                  class="logo-light"
+                  src="assets/images/Orflie - AGC.svg"
+                  alt="Orflie AGC"
+              /></a>
+            </li>
+
+            <li>
+              <a
+                href="https://audit.orflie.group/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="logo-dark"
+                  src="assets/images/Orflie - Audit-dark.svg"
+                  alt="Orflie Audit" /><img
+                  class="logo-light"
+                  src="assets/images/Orflie - Audit.svg"
+                  alt="Orflie Audit"
+              /></a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.orflie.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="logo-dark"
+                  src="assets/images/Orflie - Atende-dark.svg"
+                  alt="Orflie Atende" /><img
+                  class="logo-light"
+                  src="assets/images/Orflie - Atende.svg"
+                  alt="Orflie Atende"
+              /></a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -633,7 +727,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/theme-toggle.js?v=1"></script>
     <script src="assets/js/nav-menu.js?v=1"></script>
-    <script src="assets/js/contact-form.js?v=1"></script>
+    <script src="assets/js/contact-form.js?v=2"></script>
     <script src="assets/js/main.js?v=6"></script>
   </body>
 </html>
